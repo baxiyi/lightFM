@@ -1,0 +1,4 @@
+export const SONG_CHANGE = 'SONG_CHANGE';
+export const USER_CHANGE = 'USER_CHANGE';
+export const SNACKBAR_CHANGE = 'SNACKBAR_CHANGE';
+export const DRAWER_CHANGE = 'DRAWER_CHANGE';

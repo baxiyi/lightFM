@@ -88,6 +88,48 @@ export default {
         return query.find();
     },
 
+    //添加歌曲
+    async addSong(songInfo){
+        let Song = AV.Object.extend("Song");
+        let existSongs = await this.findSongBySongid(songInfo.id);
+        if(!existSongs.length){
+            let song = new Song();
+            song.set('name', songInfo.name);
+            song.set('author', songInfo.artists.map(artist => artist.name).join(','));
+            song.set("pic", songInfo.album.picUrl);
+            song.set("music", `https://music.163.com/song/media/outer/url?id=${songInfo.id}.mp3`);
+            song.set("link", `http://music.163.com/#/song?id=${songInfo.id}`);
+            song.set("type", songInfo.type || 'netease');
+            song.set("songid", songInfo.id);
+            song.set("public", songInfo.public || 1);
+            song.set("quality", songInfo.quality || 1);
+            return song.save();
+        }else{
+            return existSongs[0];
+        }
+    },
+
+    //添加歌曲类别和歌曲关系
+    addCatgRelation(catgArr, songObjId){
+        let promises = catgArr.map(catgId => {
+            return new Promise((resolve, reject) => {
+                let RelCatgSong = AV.Object.extend("Rel_category_song");
+                let relCatgSong = new RelCatgSong();
+                relCatgSong.set('catgId', catgId);
+                relCatgSong.set('songId', songObjId);
+                relCatgSong.save().then(res => {
+                    if(res.id)
+                        resolve(res);
+                    else
+                        reject();
+                }).catch(err => {
+                    reject();
+                })
+            })
+        })
+        return Promise.all(promises);
+    },
+
     //删除用户定制歌曲类别
     deleteUserCatgRelations(userId){
         let query = new AV.Query("Rel_user_category");

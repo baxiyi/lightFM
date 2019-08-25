@@ -11,4 +11,3 @@
 4. 访问localhost:3000即可看到项目页面
 
 ### 在线地址
-https://baxiyi.github.io/myFM/

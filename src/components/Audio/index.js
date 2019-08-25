@@ -1,9 +1,9 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import {connect} from "react-redux";
 import store from "../../store/index";
 import {SONG_CHANGE} from "../../store/types";
 
-class Audio extends React.Component {
+class Audio extends PureComponent {
     onAudioEnded() {
         let {activeIndex, songList} = this.props.songs;
         activeIndex = activeIndex === songList.length - 1 ? 0 : activeIndex + 1;

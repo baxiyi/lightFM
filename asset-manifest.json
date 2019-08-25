@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lightFM/static/css/main.bd7ad021.chunk.css",
+    "main.js": "/lightFM/static/js/main.956ca6a1.chunk.js",
+    "main.js.map": "/lightFM/static/js/main.956ca6a1.chunk.js.map",
+    "runtime~main.js": "/lightFM/static/js/runtime~main.d4adc99e.js",
+    "runtime~main.js.map": "/lightFM/static/js/runtime~main.d4adc99e.js.map",
+    "static/js/2.0725e970.chunk.js": "/lightFM/static/js/2.0725e970.chunk.js",
+    "static/js/2.0725e970.chunk.js.map": "/lightFM/static/js/2.0725e970.chunk.js.map",
+    "index.html": "/lightFM/index.html",
+    "precache-manifest.c22855d68761797c063295ae2a59b386.js": "/lightFM/precache-manifest.c22855d68761797c063295ae2a59b386.js",
+    "service-worker.js": "/lightFM/service-worker.js",
+    "static/css/main.bd7ad021.chunk.css.map": "/lightFM/static/css/main.bd7ad021.chunk.css.map",
+    "static/media/index.less": "/lightFM/static/media/bg.dd6a5bf3.jpg"
+  }
+}

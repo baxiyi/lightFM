@@ -60,6 +60,9 @@ const PrimaryLayout = () => {
             return isLogin ? <Index/> : <Login/>
           }}
         />
+        <Route render={props => {
+            return isLogin ? <Redirect to="/index/quality"/> : <Login/>;
+          }}/>
       </Switch>
     </div>
   )

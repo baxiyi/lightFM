@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a75dc58a6de1a808adf890fc3af84aa7",
+    "revision": "7b8b0c69d8e476d4b93736d68aa3e37d",
     "url": "/lightFM/index.html"
   },
   {
-    "revision": "1dc5d56f7abca3230abd",
+    "revision": "13289b2d3b5a44dc2c5c",
     "url": "/lightFM/static/css/main.bd7ad021.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lightFM/static/js/2.0725e970.chunk.js"
   },
   {
-    "revision": "1dc5d56f7abca3230abd",
-    "url": "/lightFM/static/js/main.956ca6a1.chunk.js"
+    "revision": "13289b2d3b5a44dc2c5c",
+    "url": "/lightFM/static/js/main.7e15af7a.chunk.js"
   },
   {
     "revision": "514eea3dfe7c85838dfb",

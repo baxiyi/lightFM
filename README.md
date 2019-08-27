@@ -12,3 +12,5 @@
 
 ### 在线地址
 https://baxiyi.github.io/lightFM/
+或
+http://118.25.113.177:3000/
